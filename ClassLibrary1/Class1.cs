@@ -10,7 +10,7 @@ namespace Solid
     {
         public double calculateAreaCircle(double radius)
         {
-            return Math.PI * Math.Pow(radius, 2);
+            return Math.Round((Math.PI * Math.Pow(radius, 2)),2);
         }
         public double calculateAreaTriangle(double sideFirst, double sideSecond, double sideThree)
         {
