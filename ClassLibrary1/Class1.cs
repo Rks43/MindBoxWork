@@ -15,7 +15,7 @@ namespace Solid
         public double calculateAreaTriangle(double sideFirst, double sideSecond, double sideThree)
         {
             double halfParameter = (sideFirst + sideSecond + sideThree) / 2;
-            return Math.Sqrt(halfParameter * (halfParameter - sideFirst) * (halfParameter - sideSecond) * (halfParameter - sideThree));
+            return Math.Round((Math.Sqrt(halfParameter * (halfParameter - sideFirst) * (halfParameter - sideSecond) * (halfParameter - sideThree))),2);
         }
     }
 }
