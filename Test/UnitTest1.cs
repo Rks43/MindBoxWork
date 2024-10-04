@@ -18,5 +18,11 @@ namespace Test
             Assert.Equal(0, new Ñalculator().calculateAreaTriangle(0, 0, 0));
 
         }
+        [Fact]
+        public void testSquareness()
+        {
+            Assert.Equal(true, new Ñalculator().checkSquareness(3, 4, 5));
+            Assert.Equal(false, new Ñalculator().checkSquareness(3, 4, 6));
+        }
     }
 }
